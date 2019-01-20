@@ -12,34 +12,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          <li routerLinkActive="active" class="nav-item">
-            <a id="a-link" routerLink="/index" style="color: #0088C5" class="nav-link nav-link-color">Home</a>
+          <li class="nav-item">
+            <a href="#showcase"  class="nav-link nav-link-color">Home</a>
           </li>
-          <li routerLinkActive="active"  class="nav-item">
-            <a id="a-link" href="#info" style="color: #0088C5" class="nav-link nav-link-color">About Us</a>
+          <li class="nav-item">
+            <a href="#about" class="nav-link nav-link-color">About Us</a>
           </li>
-          <li routerLinkActive="active"  class="nav-item">
-            <a id="a-link" href="#home-icons" style="color: #0088C5" class="nav-link nav-link-color">Services</a>
+          <li class="nav-item">
+            <a href="#home-icons" class="nav-link nav-link-color">Services</a>
           </li>
-          <li routerLinkActive="active" class="nav-item">
-            <a id="a-link" href="#gallery" style="color: #0088C5" class="nav-link nav-link-color">Our Work</a>
-          </li>
-          <li routerLinkActive="active" class="nav-item">
-            <a id="a-link" href="#newsletter" style="color: #0088C5" class="nav-link nav-link-color">Contact</a>
+          <!-- <li class="nav-item">
+            <a href="#gallery" class="nav-link nav-link-color">Our Work</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="#contact" class="nav-link nav-link-color">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
 <!-- SHOWCASE SLIDER -->
 
 <section id="showcase">
   <div id="myCarousel" class="carousel slide" style="top:-1px"data-ride="carousel">
-    <img src="../../assets/img/banner-image.png" class="img-fluid"/>
-    <ol class="carousel-indicators" style="bottom: 15px">
-      <a href="#info" data-slide-to="1"><img src="../../assets/img/down-arrow-wht.png" width="50px" class="img-fluid"/></a>
+    <!-- <img src="../../assets/img/banner-image.png" class="img-fluid"/> -->
+    <app-svg-banner></app-svg-banner>
+    <!-- <ol class="carousel-indicators" style="bottom: 15px">
+      <a href="#about" data-slide-to="1"><img src="../../assets/img/down-arrow-wht.png" width="50px" class="img-fluid"/></a> -->
       <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
-    </ol>
+    <!-- </ol> -->
     <!-- <div class="carousel-inner">
       <div class="carousel-item carousel-image-1 active">
         <div class="container">
@@ -57,20 +59,21 @@
   </div>
 </section>
 <!-- INFO SECTION -->
-<section id="info" class="py-3">
+<section id="about" >
     <div class="container">
         <h1 class="text-center mainheading" >Who we are</h1>
       <div class="row">
-          <div class="col-md-6 text-center align-self-center">
+          <div class="col-md-6 First align-self-center pb-5">
+              <img src="../../assets/img/WhoWeAre1.png" alt="" class="img-fluid">
+          </div> 
+        <div class="col-md-6 text-center align-self-center">
               <p class="para">
                 We are <b>Zinfinity;</b> A highly motivated team who works to develope a unique idea into it's soft format. A team which really work hard to visualize and implement your thought with balance in software quality and impact.<br>
               </p>
               <p class="para">Every challenge is an opportunity to acheive the best out of industry and our team is completely dedicated to it.
               </p>
             </div>
-        <div class="col-md-6" style="line-height: 10">
-            <img src="../../assets/img/WhoWeAre.png" alt="" class="img-fluid">
-        </div>
+        
         
         
       </div>
@@ -91,27 +94,48 @@
   <div class="container">
       <h1 class="text-center mainheading">Services</h1>
       <p class="text-center" style="font-size: 25px">Our Focused Services</p>
-    <div class="row">
-      <div class="col-md-4 mb-4 text-center">
-        <img src="../../assets/img/icons/2.png" width="70px" height="88px"/>
-        <h3 class="heading3">Web Application</h3>
-        <p class="paraServices">A Website / Application is face of company in world wide web. We understand and hardcraft it with a unique custome design and best avilable technology such as angular for single page application.</p>
+    <div id="cardServices" class="row">
+      <div class="col-md-4 mb-4 text-center pt-3" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="antiCardServices" src="../../assets/img/icons/2.png" width="70px" height="88px"/>
+        <h3 class="heading3 antiCardServices">Web Application</h3>
+        <p class="paraServices antiCardServices">A Website / Application is face of company in world wide web. We understand and hardcraft it with a unique custome design and best avilable technology such as angular for single page application.</p>
       </div>
-      <div class="col-md-4 mb-4 text-center">
-          <img src="../../assets/img/icons/3.png" width="70px"  height="88px"/>
-        <h3 class="heading3">Mobile Application</h3>
-        <p class="paraServices">Mobile application is an essential gateway for an establishing company. We boot your application with interactions and smooth Data transactions. Simple end user effective.</p>
+      <div class="col-md-4 mb-4 text-center pt-3" data-toggle="modal" data-target="#exampleModalCenter">
+          <img class="antiCardServices" src="../../assets/img/icons/3.png" width="70px"  height="88px"/>
+        <h3 class="heading3 antiCardServices">Mobile Application</h3>
+        <p class="paraServices antiCardServices">Mobile application is an essential gateway for an establishing company. We boot your application with interactions and smooth Data transactions. Simple end user effective.</p>
       </div>
-      <div class="col-md-4 mb-4 text-center">
-          <img src="../../assets/img/icons/1.png" width="70px"  height="88px" />
-        <h3 class="heading3">Hardware Support</h3>
-        <p class="paraServices">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+      <div class="col-md-4 mb-4 text-center pt-3" data-toggle="modal" data-target="#exampleModalCenter">
+        <img class="antiCardServices" src="../../assets/img/icons/1.png" width="70px"  height="88px" />
+        <h3 class="heading3 antiCardServices">Hardware Support</h3>
+        <p class="paraServices antiCardServices">Setting up an office requires best quality of hardware products including laptops, server, wifi etc. We provide best availbale in market with unique and customized offers and single point support of Zinfinity. </p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
 <!-- INFO SECTION -->
-<section id="info" class="py-3">
+<section id="info1" class="py-3">
     <div class="container">
         <h1 class="text-center mainheading">How we work?</h1>
       <div class="row" style="margin-bottom: 50px">
@@ -120,11 +144,15 @@
           </div>
           <div class="col-md-1"></div>
         <div class="col-md-7 text-center align-self-center">
-          <p style="text-align:justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
-            cum laudantium ex sequi amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
-            cum laudantium ex sequi amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
-            cum laudantium ex sequi amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
-            cum laudantium ex sequi amet.</p>
+        <h3>"The quickest methods are not always the fastest one - Gorden Beeming"</h3>
+        <h5 style="text-align: justify">Visualizing a reflection of an idea as a software solution requires a <strong>Vision.</strong> A vision which covers
+        a Bug-free environment, Future scope of your software, The efficient technical stack which is capable of fulfiling your
+      future requirements, the efficiency to handle worst case scenario in production and self recoverable in case of crash</h5>
+      <h5 style="text-align: justify">And so our team is capable of balancing the unique customized design with high end technology out there in market
+        We Design it, Develope it, Build it, Deploy it and Monitor the same with Support
+      </h5><br>
+      <h4 style="text-align: justify">Its team <strong>Zinfinity</strong> in your service to transform your ideas into software solution..!</h4>
+          <!-- <p style="text-align:justify">SDLC is OLD – DevOps is the new trend! Ideation to reality we deliver what you would love and what your customers would appreciate with the iterative and hybrid model of Agile and Waterfall development</p> -->
         </div>
         
       </div>
@@ -141,11 +169,11 @@
   </section>
 
   <!-- PHOTO GALLERY -->
-<section id="gallery" class="py-5" style="background-color: black; color : white">
+<!-- <section id="gallery" class="py-5" style="background-color: black; color : white">
     <div class="container">
       <h1 class="text-center mainheading">Our Work</h1>
-      <p class="text-center">Check out our Work</p>
-      <div class="row mb-4">
+      <p class="text-center">Check out our Work</p> -->
+      <!-- <div class="row mb-4">
         <div class="col-md-4">
           <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
@@ -189,18 +217,18 @@
             <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
           </a>
         </div>
-      </div>
-    </div>
-  </section>
+      </div> -->
+    <!-- </div>
+  </section> -->
   
 
   <!-- CONTACT SECTION -->
-<section id="contact" class="py-3">
+<section id="contact">
     <div class="container">
         <h1 class="text-center mainheading">Get In Touch</h1>
       <div class="row">
         <div class="col-md-4">
-          <div class="card p-4">
+          <div class="card p-3">
             <div class="card-body">
               <h4>Address</h4>
               <p>C/103, Manik Apts. 2, Bhavani Shankar Road, Gopinath Chavan Chowk, West, Dadar, Mumbai, Maharashtra 400028</p>
@@ -246,7 +274,7 @@
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                      <input type="submit" value="Submit" class="btn btn-outline-warning btn-block">
+                      <input type="submit" value="Submit" class="btn btn-outline-info btn-block">
                   </div>
                 </div>
               </div>
@@ -324,7 +352,7 @@
   </div>
 </section> -->
 
-<script>
+<!-- <script>
 //Smooth Scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -340,4 +368,4 @@ $(function() {
     }
   });
 });
-</script>
+</script> -->

@@ -2,8 +2,12 @@ body {
   overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
     background: #f6f6f6;
-    
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 .bg-dark{
   background-color:#000 !important;
 }
@@ -16,9 +20,16 @@ body {
   padding-right: 1rem !important;
 }
 
-
+#about{
+  padding-bottom: 5rem!important;
+  padding-top: 5rem!important;
+}
+#contact{
+  padding-bottom: 5rem!important;
+  padding-top: 5rem!important;
+}
 .navbar .nav-item.active {
-  border-left: #0088C5 3px solid;
+  border-left: #ec6c1e !important;
   border-radius: 5px;
 }
 
@@ -29,7 +40,15 @@ body {
 .carousel-image-1 {
   
 }
-
+.nav-link-color{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0088c5 !important;
+}
+.nav-link-color:active{
+  
+  color: #ec6c1e !important;
+}
 .carousel-image-2 {
   background: url('../img/image2.jpg');
   background-size: cover;

@@ -2,6 +2,38 @@
     background-color: black;
     color: white;
 }
+#cardServices{
+    background-color: black;
+    color: white;
+}
+
+#cardServices :hover:not(.antiCardServices){
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    transition: background-color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0088C5;
+    color: white;
+    cursor: pointer;
+    padding: 2px 12px;
+    border-radius: 50%;
+    transition : none;
+    font-size: 25px;
+    text-align: center;
+  }
+  .antiCardServices{
+    /* No-Style */
+}
 
 .btn-outline-orange {
     color: #ec6c1e;
@@ -10,14 +42,15 @@
     border-color: #ec6c1e;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color: #0088c5;
+.btn-outline-orange :hover {
+    color: white;
+    background-color: #ec6c1e;
+    background-image: none;
+    border-color: #ec6c1e;
 }
-.nav-link-color{
-    font-size: 18px;
-    font-weight: 500;
 
-}
+
+
 .mainheading{
     line-height: 1;
     font-size: 60px;

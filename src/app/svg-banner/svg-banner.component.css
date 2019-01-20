@@ -1,0 +1,112 @@
+.st1{clip-path:url(#SVGID_2_);}
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#010005;}
+.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#282827;}
+.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#b);}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#08446A;}
+.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#006597;}
+.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#5AA3D6;}
+.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#B0CBE7;}
+.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#D0DFEE;}
+.st8{fill:none;stroke:#FFFFFF;stroke-width:1.2489;stroke-miterlimit:22.9256;}       
+.st9{fill:none;stroke:#FFFFFF;stroke-width:1.2492;stroke-miterlimit:22.9256;}
+.st10{fill:none;stroke:#FFFFFF;stroke-width:1.4173;stroke-miterlimit:22.9256;}
+.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#0080BC;}
+.st12{fill-rule:evenodd;clip-rule:evenodd;fill:#EC6801;}
+.st13{fill-rule:evenodd;clip-rule:evenodd;fill:#3B3B3A;}
+.st14{fill-rule:evenodd;clip-rule:evenodd;fill:#0085C5;}
+.st15{fill:none;stroke:#606060;stroke-width:2.8346;stroke-miterlimit:22.9256;}
+.st16{fill-rule:evenodd;clip-rule:evenodd;fill:url(#a);}
+.st17{fill:#EC6303;}
+.st18{font-family:'ArialMT';}
+.st19{font-size:26.8042px;}
+.st20{fill:none;stroke:#606060;stroke-width:2.8346;stroke-miterlimit:22.9256;}
+
+.st8,.st9,.st10,.st20 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 20s linear forwards;
+    -o-animation: dash 20s linear forwards;
+    -moz-animation: dash 20s linear forwards;
+    animation: dash 20s linear forwards;
+}
+
+    .st15{
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash1 20s linear forwards;
+    -o-animation: dash1 20s linear forwards;
+    -moz-animation: dash1 20s linear forwards;
+    animation: dash1 20s linear forwards;
+}
+
+
+@-webkit-keyframes dash{
+    from{
+        stroke-dashoffset: 2000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash1{
+    from{
+        stroke-dashoffset: 2500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.st3,.st4,.st5,.st6,.st11,.st12,.st13,.st14 {
+opacity: 0;
+  animation: hideshow 7s forwards 1 ;
+}
+
+@keyframes hideshow {
+      0% { opacity: 0.1;}
+      100% { opacity: 1; }
+} 
+
+
+.arrow {
+	fill: white;
+	opacity: 1;
+    transform: translateY(0);
+    animation: arrow 1s infinite;
+	}
+.arrow-2 {
+	fill: white;
+	opacity: 1;
+	transform: translateY(-55px);
+}
+
+@keyframes arrow {
+  0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+  99% {
+		transform: translateY(55px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes arrow-2 {
+  0% {
+		transform: translateY(-55px);
+		opacity: 0;
+	}
+  99% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-55px);
+		opacity: 0;
+	}
+}
