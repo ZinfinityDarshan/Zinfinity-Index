@@ -1,0 +1,52 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0088C5;
+    color: white;
+    cursor: pointer;
+    padding: 2px 12px;
+    border-radius: 50%;
+    transition : none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.navbar .nav-link {
+    font-size: 14px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.navbar{
+    padding: 1.5rem 1rem !important;
+}
+
+.navbar .nav-item.active {
+    border-left: #ec6c1e !important;
+    border-radius: 5px;
+}
+
+.nav-link-color{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0088c5 !important;
+}
+
+/* .nav-link-color:hover{    
+    color: #ec6c1e !important;
+}
+
+.nav-link-color:focus{    
+    color: #ec6c1e !important;
+} */
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:active {
+    color: #ec6c1e !important;
+}

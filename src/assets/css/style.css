@@ -11,14 +11,6 @@ html{
 .bg-dark{
   background-color:#000 !important;
 }
-.navbar{
-  padding: 1.5rem 1rem;
-}
-.navbar .nav-link {
-  font-size: 14px;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
 
 #about{
   padding-bottom: 5rem!important;
@@ -28,11 +20,6 @@ html{
   padding-bottom: 5rem!important;
   padding-top: 5rem!important;
 }
-.navbar .nav-item.active {
-  border-left: #ec6c1e !important;
-  border-radius: 5px;
-}
-
 .carousel-item {
   height: 500px;
 }
@@ -40,15 +27,7 @@ html{
 .carousel-image-1 {
   
 }
-.nav-link-color{
-  font-size: 18px;
-  font-weight: 500;
-  color: #0088c5 !important;
-}
-.nav-link-color:active{
-  
-  color: #ec6c1e !important;
-}
+
 .carousel-image-2 {
   background: url('../img/image2.jpg');
   background-size: cover;

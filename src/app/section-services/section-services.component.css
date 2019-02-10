@@ -1,0 +1,28 @@
+.mainheading{
+    line-height: 1;
+    font-size: 60px;
+    margin: 40px;
+}
+
+.paraServices{
+    text-align:center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.heading3{
+    line-height: 2;
+    font-size: 30px;
+}
+#cardServices{
+    background-color: black;
+    color: white;
+}
+
+#cardServices :hover:not(.antiCardServices){
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    transition: background-color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    
+}

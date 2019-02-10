@@ -1,0 +1,12 @@
+.mainheading{
+    line-height: 1;
+    font-size: 60px;
+    margin: 40px;
+}
+
+.para{
+    text-indent: 50px; 
+    text-align:justify;
+    font-size: 22px;
+    line-height: 1.5;
+}
