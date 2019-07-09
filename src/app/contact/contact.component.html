@@ -6,27 +6,27 @@
       <div class="card-body">
         <h4>Address</h4>
         <p>C/103, Manik Apts. 2, Bhavani Shankar Road, Gopinath Chavan Chowk, Dadar West, Mumbai, Maharashtra 400028 <br><a href="https://goo.gl/maps/wELbZhErhL42">Get Directions</a></p>
-        
+
         <h4>Email</h4>
         <p>info@zinfinity.in</p>
-        <h4>Phone</h4>
-        <p>+91 98197 03050<br>+91 97736 37141</p>
+        <!-- <h4>Phone</h4>
+        <p>+91 98197 03050<br>+91 97736 37141</p> -->
       </div>
     </div>
   </div>
   <div class="col-md-8">
     <div class="card p-4">
       <div class="card-body">
-        
+
         <h3 class="text-center">Please fill out this form to contact us</h3>
         <hr>
         <br>
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-            
+
         <div class="row">
-          
+
           <div class="col-md-6">
-              
+
             <div class="form-group">
               <input type="text" formControlName="fname" class="form-control" placeholder="First Name" [ngClass]="{ 'invalid': submitted && registerForm.controls.fname.errors }">
               <div *ngIf="submitted && registerForm.controls.fname.errors" class="error">
@@ -80,7 +80,7 @@
                <span class="sr-only">Loading...</span>
               </div>
           </div>
-       
+
         </div>
       </form>
       </div>
